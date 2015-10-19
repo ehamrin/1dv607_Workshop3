@@ -18,24 +18,25 @@ namespace BlackJack.view
         public PlayGame.Action GetInput()
         {
 
+            var action = PlayGame.Action.Undefined;
+
             switch (System.Console.In.Read())
             {
                 case 'p':
-                    return PlayGame.Action.NewGame;
+                    action = PlayGame.Action.NewGame;
                     break;
                 case 'h':
-                    return PlayGame.Action.Hit;
+                    action = PlayGame.Action.Hit;
                     break;
                 case 's':
-                    return PlayGame.Action.Stand;
+                    action = PlayGame.Action.Stand;
                     break;
                 case 'q':
-                    return PlayGame.Action.Quit;
+                    action = PlayGame.Action.Quit;
                     break;
-                default:
-                    return PlayGame.Action.Undefined;
-
             }
+
+            return action;
         }
         public void DisplayCard(model.Card a_card)
         {
