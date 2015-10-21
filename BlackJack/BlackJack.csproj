@@ -69,6 +69,7 @@
   <ItemGroup>
     <Compile Include="controller\PlayGame.cs" />
     <Compile Include="model\Card.cs" />
+    <Compile Include="model\CardObserver.cs" />
     <Compile Include="model\Dealer.cs" />
     <Compile Include="model\Deck.cs" />
     <Compile Include="model\Game.cs" />

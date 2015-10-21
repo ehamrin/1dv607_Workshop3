@@ -8,6 +8,12 @@ namespace BlackJack.view
 {
     class SimpleView : IView
     {
+        public void Pause(int milliseconds)
+        {
+
+            System.Threading.Thread.Sleep(milliseconds);
+        }
+
 
         public void DisplayWelcomeMessage()
         {
