@@ -65,7 +65,7 @@ namespace BlackJack.controller
             m_view.DisplayPlayerHand(m_game.GetPlayerHand(), m_game.GetPlayerScore());
         } 
 
-        public void CardDealt(Player player, Card card)
+        public void CardDealt()
         {
             m_view.Pause(1000);
             ShowGame();
